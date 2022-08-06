@@ -1,2 +1,2 @@
-# CCT-LaTeX-Compile-Guide
-Another guide for CCT-LaTeX.
+# SSI-Compile-Guide
+A guide to compile SSI (SCIENTIA SINICA Informationis) templates.
