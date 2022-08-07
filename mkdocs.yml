@@ -1,0 +1,56 @@
+site_name: SSI编译指南
+site_author: Tony Xiang
+site_description: A guide to compile SSI templates.
+nav:
+  - "主页": index.md
+  - "本地TeX Live + XeLaTeX": tl_xelatex.md
+  - "本地TeX Live + PDFLaTeX + CCT": tl_pdflatex.md
+  - "本地CTEX + CCT": ctex_cct.md
+  - "网络编译环境(Overleaf)": overleaf.md
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Dark
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: orange
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Light
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.top
+copyright: Copyright &copy; 2022 Tony Xiang <br> Licensed under LPPL-1.3c
+repo_url: https://github.com/T0nyX1ang/SSI-Compile-Guide
+repo_name: SSI-Compile-Guide
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: timeago
+      locale: zh_CN
+      fallback_to_build_date: true
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.tilde
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      slugify: !!python/name:pymdownx.slugs.uslugify_cased
+      permalink: true
