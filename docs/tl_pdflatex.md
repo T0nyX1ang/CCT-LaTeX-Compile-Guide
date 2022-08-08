@@ -53,9 +53,9 @@
 
 - 非常折腾, ~~如果没有相应字体会更加折腾~~
 
-!!! info "额外的说明: 另外的编译方法"
+!!! info "另外的编译方法"
 
-- 直接参考[此页面](https://liam.page/2013/10/15/LaTeX-CCT-template/), 不需要下载其中的`CCT_TDS.zip`文件, 只需要在`tex`源文件`\begin{document}`之前加入如下语句:
+- 参考[此页面](https://liam.page/2013/10/15/LaTeX-CCT-template/), 如果你已经下载了本页面提供的CCT宏包合集, 不需要下载其中的`CCT_TDS.zip`文件, 只需要在`tex`源文件`\begin{document}`之前加入如下语句:
 
 ``` latex title="document.tex"
 \documentclass{SCIS2022cn}
