@@ -33,7 +33,7 @@
 ...
 \usepackage[bf,footnotesize,labelsep=quad]{caption}
 {--\captionsetup[subfloat]{labelformat=simple,captionskip=0pt}--}
-{++% \captionsetup[subfloat]{labelformat=simple,captionskip=0pt}++}
+{++\captionsetup[subfloat]{labelformat=simple,aboveskip=0pt,belowskip=0pt}++}
 \captionsetup[table]{aboveskip=1mm}
 \captionsetup[figure]{aboveskip=3mm}
 \captionsetup[algorithm]{font=footnotesize}

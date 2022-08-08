@@ -37,7 +37,7 @@
 ...
 \usepackage[bf,footnotesize,labelsep=quad]{caption}
 {--\captionsetup[subfloat]{labelformat=simple,captionskip=0pt}--}
-{++% \captionsetup[subfloat]{labelformat=simple,captionskip=0pt}++}
+{++\captionsetup[subfloat]{labelformat=simple,aboveskip=0pt,belowskip=0pt}++}
 \captionsetup[table]{aboveskip=1mm}
 \captionsetup[figure]{aboveskip=3mm}
 \captionsetup[algorithm]{font=footnotesize}
@@ -82,7 +82,7 @@
 
 - 由于调用字体的原因, 第一次编译耗时可能较长, 后续由于字体缓存已经被建立, 耗时不会很长
 
-- 注释掉`hyperref`宏包的原因: 由于新版`hyperref`宏包与`CCT`不兼容, 此时如果出现`\section`, `\subsection`或者`\subsubsection`指令, 编译会报错: `TeX capacity exceeded, sorry [parameter stack size=10000]. \CCTSetChar #1#2-`, 注释掉该宏包对后续编译无影响
+- 注释掉`hyperref`宏包的原因: 由于新版`hyperref`宏包与`CCT`不兼容, 此时如果出现`\section`, `\subsection`或者`\subsubsection`指令, 且指令中出现中文, `CCT`宏包中的部分指令会出现死循环调用. 注释掉该宏包对后续编译几乎无影响, 如果实在不想注释掉`hyperref`宏包, 可以下载由`CTEX`中提取出的[hyperref.sty](./static/hyperref.sty)和[hpdftex.def](./static/hpdftex.def), 并将这两个文件放在SSI模板的同级目录中
 
 - `CCT`宏包中的字体由`CTEX`套装中的`FontSetup.exe`提取而来, 首先会得到一个`chinese`文件夹, 文件结构如下:
 
